@@ -1,7 +1,6 @@
-#CHALLANGE INTERACTIVE CARD DETAILS FORM
-
---FEATURES USED
-
- BOOTSTRAP
-
- -- -- -- -- 
+![2024-04-27_16-08-17](https://github.com/egemenogz/interactive-card-design/assets/140327469/9ec03152-087f-4bcf-8d82-32a9a29fabde)
+![2024-04-27_16-07-13](https://github.com/egemenogz/interactive-card-design/assets/140327469/3f275d4c-fc25-4edb-bf59-be3ff30d6d1b)
+![2024-04-27_16-05-27](https://github.com/egemenogz/interactive-card-design/assets/140327469/37045ba4-c6f2-4dd9-9fdd-8064e9ca0e41)
+![2024-04-27_15-58-44](https://github.com/egemenogz/interactive-card-design/assets/140327469/a0cc981f-c587-4371-9bbd-399928f9500b)
+![2024-04-27_15-53-46](https://github.com/egemenogz/interactive-card-design/assets/140327469/702251a7-4631-42e4-88a5-bf42e9e947ee)
+![2024-04-27_15-57-04](https://github.com/egemenogz/interactive-card-design/assets/140327469/40ed4789-0b98-4487-b994-a87611194680)
