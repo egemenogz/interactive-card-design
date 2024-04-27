@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --red: hsl(0, 100%, 66%);
+  --lgrey: hsl(270, 3%, 87%);
+  --dgrey: hsl(279, 6%, 55%);
+  --verydark: hsl(278, 68%, 11%);
+}
+
+body {
+  font-size: 18px;
+  min-height: 100vh;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.hidden {
+  display: none!important;
+}
+
+.error {
+  border: 2px solid var(--red)!important;
+}
+
+.error_message {
+  gap: 0;
+}
+
+.error_message::after {
+  content: "fill the empty blanks";
+  color: var(--red);
+  margin-top: .2rem;
+}
+
+.col-image {
+  min-height: 100vh;
+  width: 40%;
+  background-image: url(../images/bg-main-desktop.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.content
+.form-container{
+  max-height: 100vh;
+}
+
+.credit-card {
+  padding: 0 16rem;
+}
+
+.form-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text {
+  color: var(--verydark);
+}
+
+.form-control {
+  color: var(--verydark) !important;
+  border-color: var(--lgrey) !important;
+}
+
+.form-control:focus {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  appearance: none;
+  background-clip: padding-box;
+  border-radius: 6px;
+  border-width: 2px 2px 2px 2px;
+  border-image: linear-gradient(
+    to left,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  );
+  border-image-slice: 9;
+  border-style: solid;
+}
+
+.btn-gradient {
+  background-image: linear-gradient(
+    to left,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  ) !important;
+  transition: background-image 0.5s;
+  color: var(--white) !important;
+}
+.btn-gradient:hover {
+  background-image: linear-gradient(
+    to left,
+    hsl(278, 94%, 30%),
+    hsl(249, 99%, 64%)
+  ) !important;
+  color: var(--white) !important;
+}
+
+.cardContainer {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+}
+
+.cardImageFront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 150px;
+  left: 136px;
+}
+
+.cardImageBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 500px;
+  left: 280px;
+}
+
+#number {
+  position: absolute;
+  letter-spacing: 2px;
+  height: 4rem;
+  bottom: 5rem;
+  left: 1rem;
+  color: var(--white);
+}
+
+.card-info {
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  right: 3rem;
+  display: flex;
+  color: var(--white);
+  justify-content: space-between;
+}
+
+#cvc {
+  position: absolute;
+  left: 5rem;
+  top: 7.5rem;
+  color: var(--lgrey);
+}
+
+.thank {
+  position: absolute;
+  right: 400px;
+  bottom: 250px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.thank h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.thank p {
+  font-size: 18px;
+  color: var(--dgrey);
+}
+
+@media screen and (max-width:768px) {
+  .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .col-image {
+    width: 100%;
+    min-height: 30vh;
+    background-image: url(../images/bg-main-mobile.png);
+  }
+
+  .cardContainer {
+    flex-direction: column-reverse;
+    left: 0px;
+    position: absolute;
+    width: 325px;
+    height: 200px;
+  }
+  
+  .cardImageFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 150px;
+    left: 100px;
+    z-index: 2;
+  }
+  
+  .cardImageBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 18px;
+    left: 40px;
+    z-index: 1;
+  }
+  .thank {
+    position: absolute;
+    right: 230px;
+    bottom: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+  .credit-card {
+    padding: 7rem 0 0 0;
+  }
+  #cvc {
+    position: absolute;
+    left: 3rem;
+    top: 4.5rem;
+    color: var(--lgrey);
+}
+  #number {
+    position: absolute;
+    letter-spacing: 0;
+    height: 4rem;
+    bottom: 5rem;
+    left: 0;
+    color: var(--white);
+}
+}
+
+@media screen and (max-width:475px) {
+  #number {
+    position: absolute;
+    letter-spacing: 1;
+    height: 4rem;
+    bottom: 5rem;
+    left: .5rem;
+    color: var(--white);
+}
+}
